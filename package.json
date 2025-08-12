@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node src/server.ts"
+    "dev": "ts-node src/server.ts",
+    "prepack": "tsc"
   },
   "keywords": [],
   "author": "",
@@ -13,11 +14,13 @@
   "packageManager": "pnpm@10.14.0",
   "dependencies": {
     "drizzle-orm": "^0.44.4",
+    "mysql2": "^3.14.3",
     "pg": "^8.16.3"
   },
   "devDependencies": {
     "@gieo/express": "^1.0.7",
     "@types/pg": "^8.15.5",
+    "gel": "^2.1.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
   }
