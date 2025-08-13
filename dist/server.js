@@ -4,6 +4,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const app_1 = __importDefault(require("./app"));
-app_1.default.listen(3003, () => {
+app_1.default.listen(3003, "127.0.0.1", () => {
     console.log("🚀 Server đang chạy tại http://localhost:3003");
 });
