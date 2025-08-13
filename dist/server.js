@@ -1,9 +1,11 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
+var __importDefault =
+  (this && this.__importDefault) ||
+  function (mod) {
+    return mod && mod.__esModule ? mod : { default: mod };
+  };
 Object.defineProperty(exports, "__esModule", { value: true });
-const app_1 = __importDefault(require("./app"));
+const app_1 = __importDefault(require("./app.js"));
 app_1.default.listen(3003, "127.0.0.1", () => {
-    console.log("🚀 Server đang chạy tại http://localhost:3003");
+  console.log("🚀 Server đang chạy tại http://localhost:3003");
 });
